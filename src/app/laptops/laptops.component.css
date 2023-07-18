@@ -1,0 +1,11 @@
+.results {
+  display: grid;
+  column-gap: 56px;
+  row-gap: 28px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: space-around;
+}

@@ -1,0 +1,15 @@
+<section class="listing">
+  <img class="listing-photo" [src]="laptop.imgPath" alt="Exterior photo of {{laptop.name}}">
+  <h2 >{{ laptop.name }}</h2>
+  <p >{{ laptop.description}}</p>
+  <p >{{ laptop.price}} PLN</p>
+
+  <div class="d-flex justify-content-between">
+    <a [routerLink]="['/laptop-details', laptop.id]" class="mr-2">
+      <button type="button" class="btn btn-primary">Details</button>
+    </a>
+    <a >
+      <button type="button" class="btn btn-danger" (click)="delLaptop()">Remove</button>
+    </a>
+  </div>
+</section>
