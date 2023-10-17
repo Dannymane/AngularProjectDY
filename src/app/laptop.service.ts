@@ -23,8 +23,8 @@ export class LaptopService {
   };
 
   getLaptops(): Observable<Laptop[]> {
-  return this.http.get<Laptop[]>(this.url) ?? [];
-}
+    return this.http.get<Laptop[]>(this.url) ?? [];
+  }
 
   getLaptop(id: number): Observable<Laptop> {
     return this.http.get<Laptop>(`${this.url}/${id}`) ?? {} as Laptop;
